@@ -1,0 +1,14 @@
+cinesuper-<regno>/
+├── README.md
+├── index.html
+├── style.css
+├── config.js
+├── app.js
+├── database/
+│   ├── 01_tables.sql
+│   ├── 02_seed.sql
+│   ├── 03_security.sql
+│   ├── 04_view.sql
+│   ├── 05_queries.sql
+│   └── 06_personalisation.sql
+└── screenshots/
