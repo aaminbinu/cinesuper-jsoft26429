@@ -14,7 +14,7 @@ insert into movies (title, release_year, language, duration_min, description, po
    'https://placehold.co/300x450/831843/ffffff?text=Premam',
    (select id from genres where name = 'Drama')),
   ('Bangalore Days', 2014, 'Malayalam', 171,
-   'Three cousins from Kerala chase their dreams in Bangalore.',
+   'Three cousins from Kerala git add database/02_seed.sql screenshots/se their dreams in Bangalore.',
    'https://placehold.co/300x450/065f46/ffffff?text=Bangalore+Days',
    (select id from genres where name = 'Comedy')),
   ('Minnal Murali', 2021, 'Malayalam', 158,
