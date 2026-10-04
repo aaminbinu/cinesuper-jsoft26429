@@ -6,6 +6,7 @@ const grid        = document.getElementById("movieGrid");
 const statusEl    = document.getElementById("status");
 const searchInput = document.getElementById("search");
 const genreFilter = document.getElementById("genreFilter");
+const languageFilter = document.getElementById("languageFilter");
 const modal       = document.getElementById("modal");
 const movieDetail = document.getElementById("movieDetail");
 const reviewList  = document.getElementById("reviewList");
@@ -63,6 +64,8 @@ async function loadMovies() {
   const genreId = genreFilter.value;
   if (search)  query = query.ilike("title", `%${search}%`);
   if (genreId) query = query.eq("genre_id", genreId);
+  const lang = languageFilter.value;
+if (lang) query = query.eq("language", lang);
 
   const { data, error } = await query;
   if (error) return showError(error);
@@ -157,6 +160,7 @@ searchInput.addEventListener("input", () => {
   typingTimer = setTimeout(loadMovies, 300);
 });
 genreFilter.addEventListener("change", loadMovies);
+languageFilter.addEventListener("change", loadMovies);
 
 // 11. Start
 async function init() {

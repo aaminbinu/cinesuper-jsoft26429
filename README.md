@@ -25,6 +25,7 @@
 - Row Level Security enabled
 
 ## My Personalisation
-- New movies added: …
-- New column: …
-- Extra feature: …
+- New movies added: Kumbalangi Nights, Ratsasan, Tumbbad, The Prestige, 3 Idiots (new genre: Horror)
+- New column: director
+- Extra feature: language filter dropdown
+- Theme colour changed to purple
